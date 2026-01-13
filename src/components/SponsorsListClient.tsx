@@ -1,7 +1,7 @@
 'use client'
 
 import { Sponsor } from '@/types/sponsor'
-import { SponsorButton } from '@/components/SponsorButton'
+import SponsorButton from '@/components/SponsorButton'
 import SponsorShowcase from '@/components/SponsorShowcase'
 import FadeIn from '@/components/FadeIn'
 import DiagonalPattern from '@/components/DiagonalPattern'

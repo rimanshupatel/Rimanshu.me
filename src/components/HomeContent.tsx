@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import PageNavigation from './Navigation'
 import DiagonalPattern from './DiagonalPattern'
 import BannerSection from './BannerSection'
 import ProfileHeader from './ProfileHeader'
@@ -18,19 +19,20 @@ import { faqs } from '@/data/blogs'
 import { FAQCard } from './FAQCard'
 import GitHubActivity from './GitHubActivity'
 import AboutMe from './AboutMe'
-import SpotifyPlayer from './SpotifyPlayer'
+
 
 
 export default function NewHeroSection() {
   return (
     <div className="min-h-screen transition-colors duration-300 relative" style={{ fontFamily: 'var(--font-hk-grotesk)' }}>
       <div className="relative mx-auto max-w-4xl">
+        <PageNavigation />
         {/* Diagonal Patterns */}
         <DiagonalPattern side="left" />
         <DiagonalPattern side="right" />
 
         {/* Main Content */}
-        <div className="mx-auto sm:w-[calc(100%-120px)] w-full max-w-4xl sm:px-0">
+        <div className="mx-auto sm:w-[calc(100%-120px)] w-full max-w-4xl sm:px-0 pt-20">
           {/* Banner Section */}
           <Reveal delay={0.1}>
             <BannerSection
@@ -76,13 +78,18 @@ export default function NewHeroSection() {
               <Reveal delay={0.1}>
                 <ContentSection className="pb-6 sm:pb-8 pt-4 sm:pt-6 px-2 sm:px-0">
                   <ContentParagraph className="mb-4 text-base sm:text-lg">
-                    <span className="font-medium dark:text-white text-black">I build from zero.</span> Whether it&apos;s frontend, backend, full-stack applications, or AI-powered experiences, I work across the entire development lifecycle. From UI/UX to deployment to user feedback, I care less about technology debates and more about delivering results that people love using.
+                    <span className="font-medium dark:text-white text-black">I build full-stack applications. Passionate about creating projects that make a real-world impact. I focus on clean code and user experience.
+
+                      Previously interned at
+                      DukaanDukaan
+                      building an AI website generation platform.
+
+                      I work with Next.js and Express.js most days, using TypeScript for type safety. I enjoy building things that look good and perform well.
+
+                      Open to collaborations and opportunities. Feel free to reach out! </span>
                   </ContentParagraph>
 
-                  {/* Spotify Player */}
-                  <div className="mt-4 sm:mt-6 px-2 sm:px-0">
-                    <SpotifyPlayer />
-                  </div>
+                  {/* Spotify Player Removed */}
                 </ContentSection>
               </Reveal>
 
