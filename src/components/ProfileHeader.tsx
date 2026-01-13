@@ -5,6 +5,7 @@ import { Moon, Sun } from 'lucide-react';
 import * as React from 'react';
 import { Tooltip, TooltipTrigger, TooltipContent } from '@/components/ui/tooltip';
 import PortfolioStars from './PortfolioStars';
+import Image from 'next/image';
 
 interface ProfileHeaderProps {
   name?: string
@@ -50,8 +51,17 @@ export default function ProfileHeader({
       </div>
       <div className="text-left sm:flex sm:justify-between sm:items-center w-full sm:px-8 px-4 flex-col sm:flex-row">
         <div className="px-0">
-          <h1 className="text-2xl sm:text-4xl font-semibold mb-0">
+          <h1 className="text-2xl sm:text-4xl font-semibold mb-0 flex items-center gap-2">
             {name}
+            <div className="relative w-5 h-5 sm:w-6 sm:h-6 -mt-1">
+              <Image
+                src="/verify-dark.png"
+                alt="Verified"
+                width={24}
+                height={24}
+                className="object-contain dark:invert"
+              />
+            </div>
           </h1>
           <p className="opacity-40 text-xs sm:text-sm">
             {age} • {title}

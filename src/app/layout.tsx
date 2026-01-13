@@ -3,7 +3,7 @@ import { Instrument_Serif, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import { ScrollToTop } from "@/components/ui/ScrollAnimations"
-import GradualBlur from "@/components/GradualBlur"
+
 const hkGrotesk = Hanken_Grotesk({
   weight: ['400'],
   style: 'normal',
@@ -52,14 +52,7 @@ export default function RootLayout({
           <div className="relative z-10">
             {children}
           </div>
-          <GradualBlur
-            position="bottom"
-            height="5rem"
-            target="page"
-            zIndex={1}
-            strength={2}
-            divCount={5}
-          />
+
           <ScrollToTop />
         </ThemeProvider>
         <script
