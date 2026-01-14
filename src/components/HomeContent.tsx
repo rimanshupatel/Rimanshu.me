@@ -8,7 +8,7 @@ import ProfileHeader from './ProfileHeader'
 import ContentSection from './ContentSection'
 import ContentParagraph from './ContentParagraph'
 import SectionBorder from './SectionBorder'
-import ExperienceContent from './experience/ExperienceContent'
+import ExperienceContent from './ExperienceContent'
 import Reachout from './Reachout'
 import CallToAction from './CallToAction'
 import TechStackMarquee from './TechStackMarquee'
@@ -99,8 +99,8 @@ export default function NewHeroSection() {
 
               {/* Experience Section */}
               <Reveal delay={0.1}>
-                <div className="sm:px-10 py-2">
-                  <h2 className="text-base sm:text-xl mb-3 mt-4 sm:mt-6 font-semibold">Professional Experience</h2>
+                <div className="sm:px-12 py-2">
+                  <h2 className="text-base sm:text-xl mb-3 opacity-20 mt-4 sm:mt-6 px-4 font-[family-name:var(--font-instrument-serif)]">Professional Experience</h2>
                   <div className="px-4">
                     <ExperienceContent />
                   </div>
