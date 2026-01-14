@@ -1,7 +1,7 @@
 import { getProjectById, getAllProjects } from '@/data/projects'
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
-import ProjectDetailClient from '@/components/ProjectDetailClient'
+import ProjectDetailClient from '@/components/projects/ProjectDetailClient'
 
 type Props = {
   params: Promise<{ id: string }>;

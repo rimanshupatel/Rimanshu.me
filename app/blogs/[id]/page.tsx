@@ -1,7 +1,7 @@
 import { getBlogById } from '@/data/blogs'
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
-import BlogPostClient from '@/components/BlogPostClient'
+import BlogPostClient from '@/components/projects/BlogPostClient'
 
 type Props = {
   params: Promise<{ id: string }>
