@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import Image from 'next/image'
 import * as React from 'react'
 import { ModeToggle } from '@/components/theme-toggle'
 import IndiaTime from '@/components/IndiaTime'
@@ -18,11 +17,6 @@ const navLinks = [
 
 export default function PageNavigation() {
   const pathname = usePathname()
-  const [mounted, setMounted] = React.useState(false)
-
-  React.useEffect(() => {
-    setMounted(true)
-  }, [])
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 w-full border-b border-transparent bg-white/50 dark:bg-black/50 backdrop-blur-md transition-all duration-300">

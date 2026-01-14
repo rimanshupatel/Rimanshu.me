@@ -18,7 +18,7 @@ import { MasonryProjectCard } from './MasonryProjectCard'
 import { faqs } from '@/data/blogs'
 import { FAQCard } from './FAQCard'
 import GitHubActivity from './GitHubActivity'
-import AboutMe from './AboutMe'
+import AboutMe from './about/AboutMe'
 
 
 
@@ -45,8 +45,8 @@ export default function NewHeroSection() {
           <Reveal delay={0.2}>
             <ProfileHeader
               name="Rimanshu Patel"
-              age="15"
-              title="Developer • Builder • Web Dev"
+              age="20"
+              title="Engineer • Developer • Builder"
               profileImage="/pfp.jpg"
               socialLinks={{
                 twitter: "https://x.com/rimanshu_patel",
